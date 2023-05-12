@@ -1,0 +1,418 @@
+/* UTILITY CLASSES */
+
+.container{
+    max-width: 1220px;
+    flex-wrap: wrap;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.wide-flex{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* UNIVERSAL STYLES & TYPOGRAPHY */
+
+body {
+    color: #793d06;
+    font-family: 'Assistant', sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h2, h3, h4{
+    font-family: 'Helvetica', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+/*Mobile View*/
+
+.about{
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.hero h2{
+    font-family: 'Assistant', sans-serif;
+}
+
+.hero h3{
+    font-family: 'Assistant', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: -.3rem;
+}
+
+.blur-box{
+    margin-top: 1rem;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+}
+
+h3{
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: rgb(183, 37, 37);
+}
+
+header h1 a{
+    color: rgb(183, 37, 37);
+}
+
+.flex-container{
+    display: flex;
+}
+
+header .flex-container{
+    justify-content: space-between;
+}
+
+header > div{
+    max-width: 960px;
+    margin: auto;
+}
+
+
+.hero{
+    background: url(/img/hero.webp) center / cover no-repeat;
+    background-attachment: fixed;
+    height: 25rem;
+    padding: 2rem;
+    display: flex;
+    color: white;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3,
+.hero h2{
+    backdrop-filter: blur(0.7px);
+    border-radius: 20%;
+}
+
+.hero-home img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    padding: 0.2rem;
+    margin-bottom: rem;
+}
+
+/* .wide-flex{
+    margin: 0 auto;
+    width: 960px;
+} */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(251, 247, 242);
+    position: sticky;
+    z-index: 999;
+    top: -10px;
+    padding: 1rem;
+
+}
+
+header .flex-container div:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header svg{
+    width: 3rem;
+}
+
+.top-nav{
+    justify-content: end;
+    display: flex;
+    text-align: right;
+    /* display: none; */
+}
+
+.top-nav li{
+    margin: 0.5rem 0;
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.menu-icon{
+    padding-top: 0.5rem;
+}
+
+.about{
+    max-width: 780px;
+    margin: auto;
+}
+
+.about p{
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.code-about{
+    background-color: rgb(183, 37, 37);
+    margin-bottom: 1.5rem;
+}
+
+.code-about .wide-flex{
+    margin: auto;
+    max-width: 800px;
+    padding: 3rem;
+}
+
+.code-about p{
+    color: antiquewhite;
+}
+
+.code-about h3{
+    margin: 0.5rem 0;
+    color: rgb(255, 145, 42);
+}
+
+.code-about svg{
+    width: 18rem;
+    display: none;
+}
+
+.btn{
+    display: flex;
+    padding:  1rem;
+    width: 18rem;
+    margin: 2rem 0;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: rgb(255, 145, 42);
+    color: cornsilk;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+.code-about .btn{
+    box-shadow: 0 4px 15px 0 rgba(144, 11, 11, 0.75);
+}
+
+.btn:hover{
+    background-color: rgb(226, 111, 33);
+}
+
+.site-examples{
+    max-width: 800px;
+    margin: auto;
+}
+
+.site{
+    margin: 1.5rem .5rem;
+    max-width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(183, 37, 37);
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 10px;
+}
+
+.site img {
+    border-radius: 15px 15px 0 0;
+}
+
+.site .btn{
+    background-color: unset;
+    border: 1px solid rgb(183, 37, 37);
+    color: rgb(183, 37, 37);
+    width: 100%;
+    margin-bottom: -1rem;
+    padding: 0.5rem;
+    display: inline;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.site .btn:hover{
+    color: rgb(255, 145, 42);
+    background-color: rgb(183, 37, 37);
+}
+
+.site .btn:last-of-type{
+    color: rgb(255, 145, 42);
+    background-color: rgb(183, 37, 37);
+}
+
+.site .btn:last-of-type:hover{
+    background-color: rgb(160, 26, 26);
+}
+
+.site h4{
+    font-weight: bold;
+
+    color: rgb(23, 107, 152);
+    font-size: 3rem;
+}
+
+.table{
+    margin-top: 1.6rem;
+}
+
+.table li{
+    color:rgb(139, 203, 238);
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.site .btn-dis{
+    background-color: lightgray;
+    border: 1px solid lightgray;;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    padding: 0.5rem;
+    display: inline;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkgray;
+}
+
+.site .btn-dis:hover{
+    cursor: auto;
+}
+
+footer svg{
+    width: 10vw;
+    max-width: 4rem;
+    transition: 1s ease;
+    border-radius: 100px;
+    padding: 0.3rem;
+}
+
+footer svg:hover{
+    box-shadow: 0 4px 15px 0 rgba(144, 11, 11, 0.75);
+}
+
+footer ul{
+    display: flex;
+}
+
+footer li:first-of-type{
+    margin-right: .5rem;
+}
+
+footer{
+   padding: 1.5rem 1rem;
+   background-color: rgb(251, 247, 242);
+}
+
+footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 600px) {
+    .menu-icon{
+        display: none;
+    }
+
+    header .flex-container{
+        flex-direction: row;
+    }
+
+    header{
+        max-height: 6.7rem;
+    }
+
+    .top-nav{
+        display: block;
+        align-items: center;
+    }
+
+    .top-nav ul{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero .container{
+        text-align: right;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+
+    .hero{
+        height: unset;
+    }
+
+    .hero h3{
+        margin: unset;
+    }
+
+    .hero .blur-box{
+        margin-right: 1rem;
+    }
+
+    .top-nav li:hover,
+    .top-nav li:active{
+        display: grid;
+        border-bottom: 1px solid rgb(183, 37, 37);;
+    }
+
+    .site{
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .site img{
+        height: 100%;
+    }
+
+    .site-examples .flex-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+  }
+
+  @media screen and (min-width: 900px) {
+    .site{
+        width: calc(100% / 3 - 1rem);
+    }
+
+  }
