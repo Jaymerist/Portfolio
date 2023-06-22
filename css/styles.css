@@ -96,7 +96,7 @@ header > div{
 
 
 .hero{
-    background: url(/img/hero.webp) center / cover no-repeat;
+    background: url(../img/hero.webp) center / cover no-repeat;
     background-attachment: fixed;
     height: 25rem;
     padding: 2rem;
@@ -158,9 +158,8 @@ header svg{
 
 .top-nav{
     justify-content: end;
-    display: flex;
     text-align: right;
-    /* display: none; */
+    display: none;
 }
 
 .top-nav li{
@@ -472,15 +471,21 @@ footer > div{
     flex-wrap: wrap;
 }
 
-.art-banner{
-    background: url(/img/jade-hero.webp) center / cover no-repeat;
-    height: 25rem;
-    padding: 2rem;
-    display: flex;
-    color: white;
-    
+.collection{
+    margin: 2rem 0;
 }
-  
+
+.art-page h3{
+    margin: unset;
+}
+
+.art-page h2{
+    font-size: 1.3rem;
+}
+
+.show-nav{
+    display: contents;
+  }
 
 @media screen and (max-width: 600px) {
     .site{
@@ -494,6 +499,10 @@ footer > div{
         display: none;
     }
 
+    .top-nav{
+        display: block;
+    }
+
     header .flex-container{
         flex-direction: row;
     }
@@ -503,7 +512,7 @@ footer > div{
     }
 
     .top-nav{
-        display: block;
+        display: flex;
         align-items: center;
     }
 
@@ -566,13 +575,19 @@ footer > div{
         margin-left: 3rem;
     }
 
-    .collection:last-of-type .art-div{
-    }
-
     .collection:last-of-type .art-div img{
         height: 100%;
         width: calc(1/4);
         padding: 0.5rem;
+
+    }
+
+    .art-page .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .art-page .column-3{
+        display: grid;
 
     }
 
@@ -593,5 +608,8 @@ footer > div{
         margin-right: 18ch;
     }
     
+    .collection:last-of-type .art-div img{
+        width: calc(25% - 0.2rem);
+    }
 
   }
